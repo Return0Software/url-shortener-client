@@ -2,8 +2,13 @@
   "name": "url-shortner-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "dependencies": {
+    "classnames": "^2.2.6",
+    "node-sass": "^4.10.0",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
@@ -13,6 +18,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -21,5 +31,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^1.2.0",
+    "prettier": "1.15.3",
+    "pretty-quick": "^1.8.0"
+  }
 }
